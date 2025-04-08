@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Conference Registration Form</title>
+</head>
+<body>
+    <h1>Conference Registration Form</h1>
+    <form action="submit_form.php" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="country">Country of Residence:</label>
+        <input type="text" id="country" name="country" value="Malaysia" readonly><br><br>
+
+        <label>Software of Interest:</label><br>
+        <input type="checkbox" id="cybersecurity" name="softwareInterest" value="Cybersecurity">
+        <label for="cybersecurity">Cybersecurity</label><br>
+        <input type="checkbox" id="dataScience" name="softwareInterest" value="Data Science">
+        <label for="dataScience">Data Science</label><br>
+        <input type="checkbox" id="networking" name="softwareInterest" value="Networking">
+        <label for="networking">Networking</label><br>
+        <input type="checkbox" id="ai" name="softwareInterest" value="Artificial Intelligence">
+        <label for="ai">Artificial Intelligence</label><br><br>
+
+        <label for="experience">Experience Level:</label><br>
+        <input type="radio" id="beginner" name="experience" value="beginner">
+        <label for="beginner">Beginner</label><br>
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="intermediate">Intermediate</label><br>
+        <input type="radio" id="advanced" name="experience" value="advanced">
+        <label for="advanced">Advanced</label><br><br>
+
+        <label for="comments">Comments or Questions:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
